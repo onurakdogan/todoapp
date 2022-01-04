@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.todo {
+  cursor: pointer;
+}
+.strike {
+  text-decoration: line-through;
+}
+
