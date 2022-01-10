@@ -15,7 +15,7 @@ const App = () => {
 
   const handleToggle = (id) => {
     let mapped = toDoList.map(title => {
-      return title.id == id ? { ...title, complete: !title.complete } : { ...title};
+      return title.id === id ? { ...title, complete: !title.complete } : { ...title};
     });
     setToDoList(mapped);
   }
