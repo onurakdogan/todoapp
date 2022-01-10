@@ -27,7 +27,7 @@ const App = () => {
     setToDoList(filtered);
   }
 
-  const addtitle = (InputVal ) => {
+  const addTask = (InputVal ) => {
     let copy = [...toDoList];
     copy = [...copy, { id: toDoList.length + 1, title: InputVal, complete: false }];
     setToDoList(copy);
@@ -38,7 +38,7 @@ const App = () => {
     <div className="App">
       <Header/>
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
-      <ToDoForm addtitle={addtitle}/>
+      <ToDoForm addTask={addTask}/>
     </div>
   );
 }
